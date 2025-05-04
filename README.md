@@ -12,7 +12,7 @@
 4. run `code .` (supaya keren), _kalo ga intinya buka projectnya di code editor (misal vs code)_
 
 ## install tailwind css
-1. di terminal code editor project _(liat langkah 5 tadi)_, run `npm init -y`
+1. di terminal code editor project _(liat langkah 4 tadi)_, run `npm init -y`
 2. kalo udah run `npm install tailwindcss @tailwindcss/postcss postcss postcss-cli`
 3. kalo udah, cari file `package.json`, ubah `script` sama `type` jadi:
 ``` json
