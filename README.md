@@ -14,7 +14,7 @@
 ##
 
 ## install tailwind css
-1. di terminal code editor project _(liat langkah 5 tadi)_, run `npm init -y`
+1. di terminal code editor project, run `npm init -y`
 2. kalo udah run `npm install tailwindcss @tailwindcss/postcss postcss postcss-cli`
 3. kalo udah, cari file `package.json`, ubah `script` sama `type` jadi:
 ``` json
@@ -30,7 +30,7 @@
 
 ## install-install buat backend
 1. masih di terminal code editor, run `npm install express express-session bcrypt mysql2 body-parser dotenv ejs`
-2. di folder `erpeel/`, buat file `.env`
+2. di root (`erpeel/`), buat file `.env`
 3. di file `.env`-nya, copas
 ``` env
 DB_HOST=<host>
@@ -50,7 +50,7 @@ DB_PORT=3306
 ```
 
 ## beress
-1. kalo mau jalanin, di terminal project, run `node server.js`
+1. kalo mau jalanin, di terminal project, run `node server.js`, kalo ada tulisan `Server running on port 3000` berarti aman
 2. terus buka browser, ke `http://localhost:3000/login`
 
 
@@ -61,7 +61,7 @@ DB_PORT=3306
 ``` html
 <head>
 ...
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
 ...
 </head>
 ```
