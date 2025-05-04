@@ -127,7 +127,12 @@ app.post('/register', async (req, res) => {
 		);
 		req.session.dosens = dosens
 
-		res.redirect('/login');
+		// res.redirect('/login');
+		return res.render('login', {
+			error: null,
+			success: 'Registrasi berhasil, silakan login',
+			formData: req.body
+		});
 
 	} catch (error) {
 		if (error.code === 'ER_DUP_ENTRY') {
