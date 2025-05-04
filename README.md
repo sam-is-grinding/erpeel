@@ -11,8 +11,6 @@
 3. kalo udah, run `cd erpeel`, _kalo ga intinya buka terminal di path `../erpeel/`_
 4. run `code .` (supaya keren), _kalo ga intinya buka projectnya di code editor (misal vs code)_
 
-##
-
 ## install tailwind css
 1. di terminal code editor project _(liat langkah 5 tadi)_, run `npm init -y`
 2. kalo udah run `npm install tailwindcss @tailwindcss/postcss postcss postcss-cli`
