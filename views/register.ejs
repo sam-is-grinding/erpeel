@@ -5,8 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Register</title>
-	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+	<link href="/styles.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
@@ -21,7 +20,14 @@
 					<%= error %>
 				</p>
 			</div>
-			<% } %>
+		<% } %>
+
+		<% if (typeof success !=='undefined' && success) { %>
+            <div class="bg-teal-100 border-l-4 border-teal-500 text-teal-700 p-4 mb-4">
+                <p> <%= success %> </p>
+            </div>
+        <% } %>
+
 
 				<form class="space-y-6" action="/register" method="POST">
 					<div>

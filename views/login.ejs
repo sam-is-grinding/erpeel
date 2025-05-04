@@ -5,20 +5,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
-	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<link href="/styles.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+	<body class="bg-gray-100 min-h-screen flex items-center justify-center">
 	<div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
 		<h1 class="text-2xl font-bold text-center mb-6">Login</h1>
-
 		<% if (typeof error !=='undefined' && error) { %>
-			<div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4">
+			<div class="mt-4 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
 				<p>
 					<%= error %>
 				</p>
 			</div>
 		<% } %>
+
+
+		<% if (typeof success !=='undefined' && success) { %>
+			<div class="mt-4 bg-teal-100 border-l-4 border-teal-500 text-teal-700 p-4">
+                <p> <%= success %> </p>
+            </div>
+        <% } %>
+
 
 		<form action="/login" method="POST" class="space-y-4">
 			<div>
