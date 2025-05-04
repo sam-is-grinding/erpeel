@@ -48,12 +48,12 @@ DB_PORT=3306
 ```
 
 ## beress
-1. kalo mau jalanin, di terminal project, run `node server.js`
+1. kalo mau jalanin, di terminal project, run `node server.js`, kalo ada tulisan `Server running on port 3000` berarti aman
 2. terus buka browser, ke `http://localhost:3000/login`
 
 
 #### *catatan:
-- kalo `server.js`-nya diubah, mattin servernya dulu pake `ctrl+c`, terus jalanin lagi pake `node server.js` (sebenernya bisa lebih gampang pake `nodemon`, tapi mlz aj :v
+- kalo `server.js`-nya diubah, mattin servernya dulu pake `ctrl+c` di terminal tempat ada tulisan `Server running on port 3000`, terus jalanin lagi pake `node server.js` (sebenernya bisa lebih gampang pake `nodemon`, tapi mlz aj :v
 - itu **halaman-halaman webnya ada `views/`**, di file-file yang extensionnya `.ejs`, tapi isinya sama aja kayak `html`
 - kalo mau pake template dari `tailwind css`, jangan lupa di `<head>` `.ejs`-nya tambahin:
 ``` html
